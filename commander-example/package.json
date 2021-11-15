@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/liana13555/node-js#readme",
   "keywords": [],
-  "description": "",
   "dependencies": {
-    "uuid": "^8.3.2",
-    "yargs": "^17.2.1"
-  }
+    "commander": "^8.3.0",
+    "uuid": "^8.3.2"
+  },
+  "description": ""
 }

@@ -1,7 +1,9 @@
 {
   "name": "js",
   "version": "1.0.0",
+  "description": "",
   "main": "app.js",
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
@@ -11,16 +13,11 @@
     "type": "git",
     "url": "git+https://github.com/liana13555/node-js.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/liana13555/node-js/issues"
   },
-  "homepage": "https://github.com/liana13555/node-js#readme",
-  "keywords": [],
-  "description": "",
-  "dependencies": {
-    "uuid": "^8.3.2",
-    "yargs": "^17.2.1"
-  }
+  "homepage": "https://github.com/liana13555/node-js#readme"
 }

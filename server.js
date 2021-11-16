@@ -2,12 +2,16 @@ const express = require('express');
 const morgan = require('morgan')
 const app = express();
 
+const { router } = require('./booksRouter');
+
 const PORT = 8081;
 
 app.use(express.json());
 // app.use(express.urlencoded({extended: true}));  // Для форм
 app.use(express.static('public'));    // для того чтобы сделать директорию публичной
 app.use(morgan('tiny'));
+// app.use(router);
+app.use('/api', router);
 
 // app.use((req, res, next) => {               
 //     console.log(`${req.method} ${req.originalUrl}, ${new Date().toISOString()}`);

@@ -1,4 +1,4 @@
-const asyncWrapper = (controller) => { // для обработки ошибок всех контроллеров
+const asyncWrapper = (controller) => { // для обработки ошибок всех контроллеров, чтобы не писать try catch
   return (req, res, next) => {
     controller(req, res).catch(next);
   };

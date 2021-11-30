@@ -1,0 +1,1 @@
+Mongoose представляет ODM-библиотеку (Object Data Modelling) для работы с MongoDB.

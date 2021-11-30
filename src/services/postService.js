@@ -1,4 +1,5 @@
 const { Post } = require('../db/postModel');
+const { WrongParametersError } = require('../helpers/errors');
 
 const getPosts = async () => {
     const posts = await Post.find({});
@@ -9,10 +10,12 @@ const getPostById = async (id) => {
     const post = await Post.findById(id);
 
     if (!post) {
-        return res.status(400).json({
-            status: `failure, no posts with id ${id} found!`,
-        });
+        throw new WrongParametersError(`failure, no posts with id ${id} found!`);
     }
+    // if (!post) {
+    //     return res.status(400).json({status: `failure, no posts with id ${id} found!`});
+    // }
+
     return post;
 };
 

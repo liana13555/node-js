@@ -8,7 +8,6 @@ const {
 
 const getPostsController = async (req, res) => {
   const posts = await getPosts();
-
   res.json({ posts });
 };
 
